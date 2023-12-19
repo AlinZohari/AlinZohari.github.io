@@ -181,5 +181,27 @@ jQuery(document).ready(function($){
 			});
 
 		});
+		
+		    // Function to set equal height for panels
+			function setEqualHeight() {
+				var maxHeight = 0;
+				projectPreviews.each(function() {
+					var currentHeight = $(this).outerHeight();
+					if (currentHeight > maxHeight) {
+						maxHeight = currentHeight;
+					}
+				});
+		
+				// Set the maximum height to all panels
+				projectPreviews.css('height', maxHeight);
+			}
+		
+			// Call the function on window resize (to handle responsive design)
+			$(window).on('resize', function() {
+				setEqualHeight();
+			});
+		
+			// Call the function initially
+			setEqualHeight();
 	};
 })(jQuery);
