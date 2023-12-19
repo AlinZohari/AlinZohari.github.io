@@ -518,6 +518,7 @@ Projects
 @media only screen and (min-width: 1024px) {
   .cd-projects-previews li:nth-of-type(4) a .cd-project-title,
   .cd-projects > li:nth-of-type(4) .cd-project-title {
+    display:none; /*Hide the 4th panel*/
     -webkit-transform: translateX(300%);
     -moz-transform: translateX(300%);
     -ms-transform: translateX(300%);
@@ -525,6 +526,7 @@ Projects
     transform: translateX(300%);
   }
 }
+
 
 li.selected .cd-project-title,
 .cd-projects > li:nth-of-type(2).selected .cd-project-title,
