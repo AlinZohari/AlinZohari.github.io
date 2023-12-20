@@ -203,6 +203,7 @@ jQuery(document).ready(function($){
 			// Call the function initially
 			setEqualHeight();
 	};
+ })(jQuery);
 /*
 	Phantom by HTML5 UP
 	html5up.net | @ajlkn
@@ -385,6 +386,5 @@ jQuery(document).ready(function($){
 					if (event.keyCode == 27)
 						$menu._hide();
 
-			});
-
+			})
 })(jQuery);
