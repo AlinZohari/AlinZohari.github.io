@@ -8,12 +8,10 @@ jQuery(document).ready(function($){
 		navigation = $('.cd-primary-nav'),
 		//if browser doesn't support CSS transitions...
 		transitionsNotSupported = ( $('.no-csstransitions').length > 0);
-
 	var animating = false,
 		//will be used to extract random numbers for projects slide up/slide down effect
 		numRandoms = projects.find('li').length, 
 		uniqueRandoms = [];
-
 	//open project
 	projectsPreviewWrapper.on('click', 'a', function(event){
 		event.preventDefault();
@@ -23,7 +21,6 @@ jQuery(document).ready(function($){
 			openProject($(this).parent('li'));
 		}
 	});
-
 	navigationTrigger.on('click', function(event){
 		event.preventDefault();
 		
@@ -47,22 +44,18 @@ jQuery(document).ready(function($){
 				else slideToggleProjects(projectsPreviewWrapper.children('li'), -1, 0, true);
 			}
 		}	
-
 		if(transitionsNotSupported) animating = false;
 	});
-
 	//scroll down to project info
 	projectsContainer.on('click', '.scroll', function(){
 		projectsContainer.animate({'scrollTop':$(window).height()}, 500); 
 	});
-
 	//check if background-images have been loaded and show project previews
 	projectPreviews.children('a').bgLoaded({
 	  	afterLoaded : function(){
 	   		showPreview(projectPreviews.eq(0));
 	  	}
 	});
-
 	function showPreview(projectPreview) {
 		if(projectPreview.length > 0 ) {
 			setTimeout(function(){
@@ -71,7 +64,6 @@ jQuery(document).ready(function($){
 			}, 150);
 		}
 	}
-
 	function openProject(projectPreview) {
 		var projectIndex = projectPreview.index();
 		projects.children('li').eq(projectIndex).add(projectPreview).addClass('selected');
@@ -84,13 +76,11 @@ jQuery(document).ready(function($){
 			slideToggleProjects(projectPreviews, projectIndex, 0, true);
 		}
 	}
-
 	function closeProject() {
 		projects.find('.selected').removeClass('selected').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
 			$(this).removeClass('content-visible').off('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend');
 			slideToggleProjects(projectsPreviewWrapper.children('li'), -1, 0, false);
 		});
-
 		//if browser doesn't support CSS transitions...
 		if( transitionsNotSupported ) {
 			projectPreviews.removeClass('slide-out');
@@ -98,11 +88,9 @@ jQuery(document).ready(function($){
 			animating = false;
 		}
 	}
-
 	function slideToggleProjects(projectsPreviewWrapper, projectIndex, index, bool) {
 		if(index == 0 ) createArrayRandom();
 		if( projectIndex != -1 && index == 0 ) index = 1;
-
 		var randomProjectIndex = makeUniqueRandom();
 		if( randomProjectIndex == projectIndex ) randomProjectIndex = makeUniqueRandom();
 		
@@ -126,7 +114,6 @@ jQuery(document).ready(function($){
 			});
 		}
 	}
-
 	//http://stackoverflow.com/questions/19351759/javascript-random-number-out-of-5-no-repeat-until-all-have-been-used
 	function makeUniqueRandom() {
 	    var index = Math.floor(Math.random() * uniqueRandoms.length);
@@ -135,7 +122,6 @@ jQuery(document).ready(function($){
 	    uniqueRandoms.splice(index, 1);
 	    return val;
 	}
-
 	function createArrayRandom() {
 		//reset array
 		uniqueRandoms.length = 0;
@@ -144,7 +130,6 @@ jQuery(document).ready(function($){
         }
 	}
 });
-
  /*
  * BG Loaded
  * Copyright (c) 2014 Jonathan Catmull
@@ -153,17 +138,14 @@ jQuery(document).ready(function($){
  (function($){
  	$.fn.bgLoaded = function(custom) {
 	 	var self = this;
-
 		// Default plugin settings
 		var defaults = {
 			afterLoaded : function(){
 				this.addClass('bg-loaded');
 			}
 		};
-
 		// Merge default and user settings
 		var settings = $.extend({}, defaults, custom);
-
 		// Loop through element
 		self.each(function(){
 			var $this = $(this),
@@ -181,6 +163,7 @@ jQuery(document).ready(function($){
 			});
 
 		});
+
 		    // Function to set equal height for panels
 			function setEqualHeight() {
 				var maxHeight = 0;
@@ -190,20 +173,21 @@ jQuery(document).ready(function($){
 						maxHeight = currentHeight;
 					}
 				});
-		
+
 				// Set the maximum height to all panels
 				projectPreviews.css('height', maxHeight);
 			}
-		
+
 			// Call the function on window resize (to handle responsive design)
 			$(window).on('resize', function() {
 				setEqualHeight();
 			});
-		
+
 			// Call the function initially
 			setEqualHeight();
 	};
- })(jQuery);
+})(jQuery);
+
 /*
 	Phantom by HTML5 UP
 	html5up.net | @ajlkn
@@ -386,5 +370,6 @@ jQuery(document).ready(function($){
 					if (event.keyCode == 27)
 						$menu._hide();
 
-			})
+			});
+
 })(jQuery);
