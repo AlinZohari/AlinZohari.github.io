@@ -28,16 +28,12 @@
     <style>
         /* Custom style for lightbox*/
     
-        /* Overlay background */
-        .lightboxOverlay {
-            background: rgba(0, 0, 0, 0.8) !important; /* Adjust the opacity and color */
+        /* Center the lightbox */
+        .lb-outerContainer {
+            display: table;
+            margin: 0 auto;
         }
-    
-        /* Lightbox container */
-        .lightbox {
-            max-width: 800px; /* Adjust the maximum width */
-        }
-    
+
         /* Caption styling */
         .lb-caption {
             color: #fff;
@@ -45,7 +41,7 @@
             text-align: center;
             margin-top: 10px;
         }
-    
+
         /* Navigation buttons */
         .lb-prev, .lb-next {
             background: #333;
@@ -54,7 +50,7 @@
             padding: 10px;
             border-radius: 5px;
         }
-    
+
         /* Close button */
         .lb-close {
             font-size: 30px;
