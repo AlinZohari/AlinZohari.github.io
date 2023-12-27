@@ -6,16 +6,62 @@
 
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|Merriweather:400italic,400' rel='stylesheet' type='text/css'>
     
-    <!--From W3 Schools-->
+    <!--For W3 Schools-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!--For Sliding Panels-->
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+    <!--For Lighthbox-->
+    <!-- Lightbox2 CSS from CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <!-- jQuery (required for Lightbox2) from CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Lightbox2 JS from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
   	
 	<title>Alin Zohari</title>
 
+    <style>
+        /* Custom style for lightbox*/
+    
+        /* Overlay background */
+        .lightboxOverlay {
+            background: rgba(0, 0, 0, 0.8) !important; /* Adjust the opacity and color */
+        }
+    
+        /* Lightbox container */
+        .lightbox {
+            max-width: 800px; /* Adjust the maximum width */
+        }
+    
+        /* Caption styling */
+        .lb-caption {
+            color: #fff;
+            font-size: 16px;
+            text-align: center;
+            margin-top: 10px;
+        }
+    
+        /* Navigation buttons */
+        .lb-prev, .lb-next {
+            background: #333;
+            font-size: 20px;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    
+        /* Close button */
+        .lb-close {
+            font-size: 30px;
+            color: #fff;
+        }
+    </style>
+    
 </head>
 <body>
 	<a class="cd-nav-trigger cd-text-replace" href="#primary-nav">Menu<span aria-hidden="true" class="cd-icon"></span></a>
@@ -62,18 +108,30 @@
 				<div class="cd-project-info">
                     <div class="w3-main" style="margin-left:100px">
 
-                        <div class="w3-row w3-padding-64">
-                            <a href="https://github.com/AlinZohari/InformationExtraction" target="_blank">
-                                <h1 class="w3-text-back" style="font-size: 20px; font-weight: bold; margin-bottom: 16px; text-align: center;">
-                                    <span class="link-icon">&#128279;</span> Information Extraction
-                                </h1>
-                            </a>
-                            <h2 class="w3-text-back" style= "font-weight: bold;  margin-bottom: 5px; text-align: center; line-height: 1.35;">Leveraging Language Models for Information Extraction of Entities in Orbital Environment Evolution</h2>
+                    <div class="w3-row w3-padding-64">
+                        <div class="w3-container" style="text-align: left;">
+                          <a href="https://github.com/AlinZohari/InformationExtraction" target="_blank">
+                            <h1 class="w3-text-back" style="font-size: 20px; font-weight: bold; margin-bottom: 16px; text-align: center;">
+                                <span class="link-icon">&#128279;</span> Information Extraction
+                            </h1>
+                        </a>
+                          <h2 class="w3-text-back" style= "font-weight: bold;  margin-bottom: 5px; text-align: center; line-height: 1.35;">Leveraging Language Models for Information Extraction of Entities in Orbital Environment Evolution</h2>
+                          <div>
                             <p style="line-height: 1.6;">Emerging commercial models, stakeholders, and technologies are fueling the development of diverse advanced mega satellite constellation services, with major players competitively launching Fixed Satellite System (FSS), primarily in Low Earth Orbit (LEO), comprising hundreds and thousands of satellites. Research on the orbital environment's evolution illustrates how satellite distribution changes over time. Visualizing this evolution and conducting conjunction analyses democratizes information accessibility for the public, scientific community, and regulatory bodies. Official authorized documents, such as those from the FCC (Federal Communication Commission), play a crucial role in predicting space population and the orbital environment. However, manual extraction is labor-intensive, making it suitable for Information Extraction (IE) tasks in Natural Language Processing (NLP).
                                 <br>
                                 The project aims to locate and extract 11 granted orbital environment entities from unstructured FCC documents. Three methods are explored: In-Context Learning with Large Language Models (LLMs), Embedding with Retrieval QA (Question Answer) model, and Fine Tuning QA (Question Answer) model.
-                            </p>              
+                            </p> 
                         </div>
+                            <div class="w3-container" style="text-align: center; margin-top: 10px;">
+                                <a href="img/img-1.jpg" data-lightbox="project1" data-title="Caption for Image 1">
+                                    <img src="img/img-1.jpg" alt="Advertisement 1" width="300" height="200" class="w3-border w3-padding w3-center">
+                                </a>
+                                <a href="img/img-2.jpg" data-lightbox="project1" data-title="Caption for Image 2">
+                                    <img src="img/img-2.jpg" alt="Advertisement 2" width="300" height="200" class="w3-border w3-padding w3-center">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
                         <!-- Horizontal line -->
                         <div style="width: 50%; margin: auto; border-top: 0.8px solid #bfbebe;"></div>
@@ -94,11 +152,15 @@
                                   <br>
                               </p>
                             </div>
-                              <div class="w3-container" style="text-align: center; margin-top: 10px;">
-                              <img src="img/img-1.jpg" alt="Advertisement 1" width="300" height="200" class="w3-border w3-padding w3-center">
-                              <img src="img/img-2.jpg" alt="Advertisement 2" width="300" height="200"class="w3-border w3-padding w3-center">
+                                <div class="w3-container" style="text-align: center; margin-top: 10px;">
+                                    <a href="img/img-1.jpg" data-lightbox="project2" data-title="Caption for Image 1">
+                                        <img src="img/img-1.jpg" alt="Advertisement 1" width="300" height="200" class="w3-border w3-padding w3-center">
+                                    </a>
+                                    <a href="img/img-2.jpg" data-lightbox="project2" data-title="Caption for Image 2">
+                                        <img src="img/img-2.jpg" alt="Advertisement 2" width="300" height="200" class="w3-border w3-padding w3-center">
+                                    </a>
+                                </div>
                             </div>
-                          </div>                        
                         </div>
 
                         <div style="width: 50%; margin: auto; border-top: 0.8px solid  #bfbebe;"></div>
@@ -118,12 +180,16 @@
                                 These endpoints primarily use the GET and POST methods
                               </p>
                             </div>
-                            <div class="w3-container" style="text-align: center; margin-top: 10px;">
-                            <img src="img/img-1.jpg" alt="Advertisement 1" width="300" height="200" class="w3-border w3-padding w3-center">
-                            <img src="img/img-2.jpg" alt="Advertisement 2" width="300" height="200"class="w3-border w3-padding w3-center">
-                          </div>
-                        </div>                        
-                      </div>
+                                <div class="w3-container" style="text-align: center; margin-top: 10px;">
+                                    <a href="img/img-1.jpg" data-lightbox="project3" data-title="Caption for Image 1">
+                                        <img src="img/img-1.jpg" alt="Advertisement 1" width="300" height="200" class="w3-border w3-padding w3-center">
+                                    </a>
+                                    <a href="img/img-2.jpg" data-lightbox="project3" data-title="Caption for Image 2">
+                                        <img src="img/img-2.jpg" alt="Advertisement 2" width="300" height="200" class="w3-border w3-padding w3-center">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
                       <div style="width: 50%; margin: auto; border-top: 0.5px solid  #bfbebe;"></div>
 
@@ -142,12 +208,16 @@
                                 DBSCAN and ST-DBSCAN are the method use for identifying clusters in spatial and spatial-temporal data, respectively.
                                 The use of Silhouette Score as a performance validation metric ensures the optimal hyperparameter tuned and produce a reliable cluster models.
                                 </p>
+                                </div>
+                                <div class="w3-container" style="text-align: center; margin-top: 10px;">
+                                    <a href="img/img-1.jpg" data-lightbox="project4" data-title="Caption for Image 1">
+                                        <img src="img/img-1.jpg" alt="Advertisement 1" width="300" height="200" class="w3-border w3-padding w3-center">
+                                    </a>
+                                    <a href="img/img-2.jpg" data-lightbox="project4" data-title="Caption for Image 2">
+                                        <img src="img/img-2.jpg" alt="Advertisement 2" width="300" height="200" class="w3-border w3-padding w3-center">
+                                    </a>
+                                </div>
                             </div>
-                            <div class="w3-container" style="text-align: center; margin-top: 10px;">
-                                <img src="img/img-1.jpg" alt="Advertisement 1" width="300" height="200" class="w3-border w3-padding w3-center">
-                                <img src="img/img-2.jpg" alt="Advertisement 2" width="300" height="200"class="w3-border w3-padding w3-center">
-                            </div>
-                        </div>                        
                         </div>
 
                       <div style="width: 50%; margin: auto; border-top: 0.5px solid  #bfbebe;"></div>
@@ -175,13 +245,17 @@
                                 <span style="font-weight: bold;">Bayesian Learning:</span> GaussianNB, CategoricalNB, BernoulliNB<br>
                                 <span style="font-weight: bold;">Model Ensembles:</span> Stacking (voting mechanism)
                             </p>
-                        </div>
-                                <div class="w3-container" style="text-align: center; margin-top: 10px;">
-                                <img src="img/img-1.jpg" alt="Advertisement 1" width="300" height="200" class="w3-border w3-padding w3-center">
-                                <img src="img/img-2.jpg" alt="Advertisement 2" width="300" height="200"class="w3-border w3-padding w3-center">
                             </div>
-                            </div>                        
+                            <div class="w3-container" style="text-align: center; margin-top: 10px;">
+                                <a href="img/img-1.jpg" data-lightbox="project5" data-title="Caption for Image 1">
+                                    <img src="img/img-1.jpg" alt="Advertisement 1" width="300" height="200" class="w3-border w3-padding w3-center">
+                                </a>
+                                <a href="img/img-2.jpg" data-lightbox="project5" data-title="Caption for Image 2">
+                                    <img src="img/img-2.jpg" alt="Advertisement 2" width="300" height="200" class="w3-border w3-padding w3-center">
+                                </a>
+                            </div>
                         </div>
+                    </div>
 
                         <div style="width: 50%; margin: auto; border-top: 0.5px solid  #bfbebe;"></div>
 
@@ -199,13 +273,17 @@
                                 When the user enter their coordinate on the island, it will return to the user the position of the highest point within a 5 kilometer of radius from them.
                                 It shows which route to take that are the shortest and would give the time it would take for the user to walk from their position to the highest point.
                             </p>
-                        </div>
-                                <div class="w3-container" style="text-align: center; margin-top: 10px;">
-                                <img src="img/img-1.jpg" alt="Advertisement 1" width="300" height="200" class="w3-border w3-padding w3-center">
-                                <img src="img/img-2.jpg" alt="Advertisement 2" width="300" height="200"class="w3-border w3-padding w3-center">
                             </div>
-                            </div>                        
+                            <div class="w3-container" style="text-align: center; margin-top: 10px;">
+                                <a href="img/img-1.jpg" data-lightbox="project6" data-title="Caption for Image 1">
+                                    <img src="img/img-1.jpg" alt="Advertisement 1" width="300" height="200" class="w3-border w3-padding w3-center">
+                                </a>
+                                <a href="img/img-2.jpg" data-lightbox="project6" data-title="Caption for Image 2">
+                                    <img src="img/img-2.jpg" alt="Advertisement 2" width="300" height="200" class="w3-border w3-padding w3-center">
+                                </a>
+                            </div>
                         </div>
+                    </div>
 
                         <div style="width: 50%; margin: auto; border-top: 0.5px solid  #bfbebe;"></div>
 
@@ -218,16 +296,20 @@
                             </a>
                             <div>
                             <p style="line-height: 1.6;"> This project involved the development of a 3D model for a specific section of a University Department building, utilizing 3D laser point cloud data. The entire process adhered to the specifications outlined in Plowman Craven's BIM Survey Specification, Level 4.<br>
-                                Comprehensive <a href="doc/3DModel.pdf" target="_blank" style= color: blue;">documentation</a> was produced to ensure transparency and clarity throughout the 3D model creation process. This documentation serves as a detailed record of the procedures followed, facilitating future reference and understanding.
+                                Comprehensive <a href="doc/3DModel.pdf" target="_blank" style= color:blue;>documentation</a> was produced to ensure transparency and clarity throughout the 3D model creation process. This documentation serves as a detailed record of the procedures followed, facilitating future reference and understanding.
                                 To convey the results effectively to the client, strategic communication methods were employed. The 3D model, along with its accompanying documentation, was presented to ensure a thorough comprehension of the project outcomes
                             </p>
-                                </div>
-                                <div class="w3-container" style="text-align: center; margin-top: 10px;">
-                                <img src="img/img-1.jpg" alt="Advertisement 1" width="300" height="200" class="w3-border w3-padding w3-center">
-                                <img src="img/img-2.jpg" alt="Advertisement 2" width="300" height="200"class="w3-border w3-padding w3-center">
                             </div>
-                            </div>                        
+                            <div class="w3-container" style="text-align: center; margin-top: 10px;">
+                                <a href="img/img-1.jpg" data-lightbox="project7" data-title="Caption for Image 1">
+                                    <img src="img/img-1.jpg" alt="Advertisement 1" width="300" height="200" class="w3-border w3-padding w3-center">
+                                </a>
+                                <a href="img/img-2.jpg" data-lightbox="project7" data-title="Caption for Image 2">
+                                    <img src="img/img-2.jpg" alt="Advertisement 2" width="300" height="200" class="w3-border w3-padding w3-center">
+                                </a>
+                            </div>
                         </div>
+                    </div>
 
                         <div style="width: 50%; margin: auto; border-top: 0.git 5px solid  #bfbebe;"></div>
                       
