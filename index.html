@@ -28,8 +28,8 @@
 	<title>Alin Zohari</title>
 
     <style>
+        
         /* Custom style for lightbox */
-    
         /* 1. Center the lightbox */
         .lb-outerContainer {
             display: table;
@@ -72,6 +72,7 @@
         .w3-container.text-center img {
             margin-top: 10px; /* Adjust the margin as needed */
         }
+
 
 
     </style>
@@ -360,7 +361,6 @@
 			</li>
 
 			<li>
-            <a href="about.html">
 				<div class="preview-image">
 					<div class="cd-project-title">
 						<h2>ABOUT</h2>
@@ -370,10 +370,21 @@
 					</div> 
 				</div>
 
-                <div class="cd-project-info" id="aboutContent">
-                    <!-- Content will be loaded dynamically here -->
-                </div>
+				<div class="cd-project-info">
+                    <div class = "about-section">
+                        <div class = "about-image">
+                            <img src="img/img-4.jpg" alt="Your Image">
+                        </div>
+                            <div class="about-text">
+                                <h2>Hi! I'm Alin</h2>
+                                <p>
+                                    <!-- Your long text content goes here -->
+                                </p>
+                            <div>
+                    </div>
+				</div> <!-- .cd-project-info -->
 			</li>
+              
 
 			<li>
 				<div class="preview-image">
@@ -409,23 +420,6 @@
 
 <script src="js/jquery-2.1.1.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
-
-<script>
-    // Function to fetch and update content
-    function loadContent(url, targetId) {
-        fetch(url)
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById(targetId).innerHTML = html;
-            })
-            .catch(error => console.error(`Error fetching ${url}:`, error));
-    }
-
-    // Load about.html content when the page loads
-    document.addEventListener('DOMContentLoaded', function () {
-        loadContent('about.html', 'aboutContent');
-    });
-</script>
 
 
 </body>
