@@ -98,6 +98,40 @@
         }
     }
 
+        /* Add custom styles if needed */
+        .about-text {
+            margin-top: 10px; /* Add margin between image and text */
+            max-height: 870px; /* Set a maximum height for the text */
+            overflow-y: auto; /* Enable vertical scrolling for overflow content */
+        }
+
+        .preview-image {
+            margin-bottom: 0; /* Remove bottom margin */
+        }
+
+        .about-image {
+            width: 100%; /* Set the width to 100% to fill the container */
+            height: 100%; /* Set the height to 100% to fill the container */
+            overflow: hidden; /* Hide any overflow content */
+
+        }
+
+        .about-image img {
+            width: 100%; /* Set the width to 100% to fill the container */
+            height: 100%; /* Set the height to 100% to fill the container */
+            object-fit: cover; /* Fill the container while maintaining aspect ratio */
+            display: block; /* Remove extra space below image */
+        }
+
+        .about-image,
+        .about-text {
+            margin-bottom: 0; /* Remove bottom margin */
+        }
+
+        .w3-container {
+            padding: 0; /* Remove padding to avoid extra space */
+        }
+
 
     </style>
     
@@ -383,32 +417,38 @@
 				</div> <!-- .cd-project-info -->
 			</li>
 
-			<li>
-				<div class="preview-image">
-					<div class="cd-project-title">
-						<h2>ABOUT</h2>
+            <li>
+                <div class="preview-image">
+                    <div class="cd-project-title">
+                        <h2>ABOUT</h2>
                         <p style="line-height: 1.6; max-width: 800px; margin: 0 auto; text-align: center;">
                             Hi! I'm Alin
                         </p>
-					</div> 
-				</div>
-
-				<div class="cd-project-info">
-                    <div class = "about-section">
-                        <div class = "about-image">
-                            <img src="img/img-4.jpg" alt="Your Image">
+                    </div> 
+                </div>
+        
+                <div class="cd-project-info w3-container">
+                    <div class="w3-row">
+                        <div class="w3-col m6">
+                            <div class="about-image">
+                                <img src="img/pic1_colourful.jpg" alt="Your Image">
+                            </div>
                         </div>
-                            <div class="about-text">
-                                <h2>Hi! I'm Alin</h2>
-                                <p>
-                                    <!-- Your long text content goes here -->
-                                </p>
-                            <div>
+                        <div class="w3-col m6 about-text">
+                            <h2>Hi! I'm Alin</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+                                Lorem ipsum dolor sit amet, consectetu						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+                                Lorem ipsum dolor sit amet, consectetususcipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+                            </p>
+                        </div>
                     </div>
-				</div> <!-- .cd-project-info -->
-			</li>
-              
+                </div>
+            </li>
 
+          
 			<li>
 				<div class="preview-image">
 					<div class="cd-project-title">
