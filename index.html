@@ -29,39 +29,66 @@
 
     <style>
         
-        /* Custom style for lightbox */
-        /* 1. Center the lightbox */
+    /* Custom style for lightbox */
+    .lb-outerContainer {
+        display: table;
+        margin: 0 auto;
+    }
+
+    /* Caption styling */
+    .lb-caption {
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    /* Navigation buttons */
+    .lb-prev, .lb-next {
+        background: #333;
+        font-size: 20px;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    /* Close button */
+    .lb-close {
+        font-size: 30px;
+        color: #fff;
+    }
+
+    /* Center content vertically */
+    .w3-row.w3-padding-64 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    .w3-container.text-center {
+        text-align: center;
+    }
+
+    .w3-container.w3-padding-64 {
+        margin-top: 10px;
+    }
+
+    .w3-container.text-center img {
+        margin-top: 10px;
+    }
+
+    /* Media query for smaller screens (e.g., mobile devices) */
+    @media only screen and (max-width: 600px) {
         .lb-outerContainer {
-            display: table;
+            display: block;
             margin: 0 auto;
         }
-        /* 2. Caption styling */
-        .lb-caption {
-            color: #fff;
-            font-size: 16px;
-            text-align: center;
-            margin-top: 10px;
-        }
-        /* 3. Navigation buttons */
-        .lb-prev, .lb-next {
-            background: #333;
-            font-size: 20px;
-            color: #fff;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        /* 4. Close button */
-        .lb-close {
-            font-size: 30px;
-            color: #fff;
-        }
-        /* 5. Center content vertically */
+
+        /* Adjust margins for text in mobile view */
         .w3-row.w3-padding-64 {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh; /* Ensure the container takes at least the full height of the viewport */
+            padding: 50px;
         }
         .w3-container.text-center {
             text-align: center;
@@ -70,9 +97,11 @@
             margin-top: 10px;
         }
         .w3-container.text-center img {
-            margin-top: 10px; /* Adjust the margin as needed */
+            margin-top: 10px;
         }
 
+        /* Add more styles as needed for smaller screens */
+    }
 
 
     </style>
@@ -208,18 +237,18 @@
                                 These endpoints primarily use the GET and POST methods
                               </p>
                             </div>
-                                <div class="w3-container" style="text-align: center; margin-top: 10px;">
-                                    <a href="img/BackEnd/crudEndpoints.jpg" data-lightbox="project3" data-title="API with CRUD functionality for PostgreSQL database management. Configure GET and POST request endpoints, utilizing SQL queries for database interaction. Use 'body-parser' to parse and manage HTTP request data for inserting or retrieving information">
-                                        <img src="img/BackEnd/crudEndpoints.jpg" alt="Advertisement 1" width="520" height="240" class="w3-border w3-padding w3-center">
-                                    </a>
-                                    <a href="img/BackEnd/geojsonEndpoints.jpg" data-lightbox="project3" data-title="Node.js and Express power these RESTful endpoints, delivering JSON and GeoJSON data sourced from a PostgreSQL database—all accessible through GET requests">
-                                        <img src="img/BackEnd/geojsonEndpoints.jpg" alt="Advertisement 2" width="365" height="360" class="w3-border w3-padding w3-center">
-                                    </a>
-                                </div>
+                            <div class="w3-container" style="text-align: center; margin-top: 10px;">
+                                <a href="img/BackEnd/crudEndpoints.jpg" data-lightbox="project3" data-title="API with CRUD functionality for PostgreSQL database management. Configure GET and POST request endpoints, utilizing SQL queries for database interaction. Use 'body-parser' to parse and manage HTTP request data for inserting or retrieving information">
+                                    <img src="img/BackEnd/crudEndpoints.jpg" alt="Advertisement 1" width="420" height="140" class="w3-border w3-padding w3-center">
+                                </a>
+                                <a href="img/BackEnd/geojsonEndpoints.jpg" data-lightbox="project3" data-title="Node.js and Express power these RESTful endpoints, delivering JSON and GeoJSON data sourced from a PostgreSQL database—all accessible through GET requests">
+                                    <img src="img/BackEnd/geojsonEndpoints.jpg" alt="Advertisement 2" width="265" height="260" class="w3-border w3-padding w3-center">
+                                </a>
+                            </div>
                             </div>
                         </div>
 
-                      <div style="width: 50%; margin: auto; border-top: 0.5px solid  #bfbebe;"></div>
+                    <div style="width: 50%; margin: auto; border-top: 0.8px solid  #bfbebe;"></div>
 
                         <div class="w3-row w3-padding-64">
                             <div class="w3-container" style="text-align: left;">
@@ -254,7 +283,7 @@
                             </div>
                         </div>
 
-                      <div style="width: 50%; margin: auto; border-top: 0.5px solid  #bfbebe;"></div>
+                        <div style="width: 50%; margin: auto; border-top: 0.8px solid  #bfbebe;"></div>
 
                         <div class="w3-row w3-padding-64">
                             <div class="w3-container" style="text-align: left;">
@@ -288,13 +317,13 @@
                                     <img src="img/ML/featureCorrelatTable.jpg" alt="Advertisement 2" width="400" height="300" class="w3-border w3-padding w3-center">
                                 </a>
                                 <a href="img/ML/summaryTable.jpg" data-lightbox="project5" data-title="Comparison of all performance result the algorithms. For accuracy, precision, recall and F1-score, macro average value  are used. The values of Running time and AUC-ROC were also calculated in each task">
-                                    <img src="img/ML/summaryTable.jpg" alt="Advertisement 3" width="480" height="200" class="w3-border w3-padding w3-center">
+                                    <img src="img/ML/summaryTable.jpg" alt="Advertisement 3" width="430" height="150" class="w3-border w3-padding w3-center">
                                 </a>
                             </div>
                         </div>
                     </div>
 
-                        <div style="width: 50%; margin: auto; border-top: 0.5px solid  #bfbebe;"></div>
+                    <div style="width: 50%; margin: auto; border-top: 0.8px solid  #bfbebe;"></div>
 
 
                         <div class="w3-row w3-padding-64">
@@ -319,7 +348,7 @@
                         </div>
                     </div>
 
-                        <div style="width: 50%; margin: auto; border-top: 0.5px solid  #bfbebe;"></div>
+                    <div style="width: 50%; margin: auto; border-top: 0.8px solid  #bfbebe;"></div>
 
                         <div class="w3-row w3-padding-64">
                             <div class="w3-container" style="text-align: left;">
@@ -355,7 +384,7 @@
                         </div>
                     </div>
 
-                        <div style="width: 50%; margin: auto; border-top: 0.5px solid  #bfbebe;"></div>
+                    <div style="width: 50%; margin: auto; border-top: 0.8px solid  #bfbebe;"></div>
                       
 				</div> <!-- .cd-project-info -->
 			</li>
