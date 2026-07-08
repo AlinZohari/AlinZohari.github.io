@@ -77,7 +77,7 @@ export default function HomePage() {
           </ul>
         </Section>
 
-        <Section id="contact" title="Contact" subtitle="Open to collaborations, geospatial roles, and applied data projects.">
+        <Section id="contact" title="Contact">
           <div className="contact-card">
             <a href={`mailto:${profile.email}`}>{profile.email}</a>
             <p>{profile.location}</p>
