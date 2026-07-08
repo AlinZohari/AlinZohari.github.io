@@ -45,6 +45,6 @@ The static output is generated in the `out` directory.
 - Styling: `src/app/globals.css`
 - Static files (images, PDF CV): `public/img`, `public/doc`
 
-## Domain
+## Site URL
 
-Custom domain is preserved using `CNAME` (`www.alinzohari.com`).
+Hosted on the default GitHub Pages URL: `https://alinzohari.github.io/`.
