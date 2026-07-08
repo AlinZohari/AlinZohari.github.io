@@ -80,6 +80,8 @@ export default function HomePage() {
         <Section id="contact" title="Contact" subtitle="Open to collaborations, geospatial roles, and applied data projects.">
           <div className="contact-card">
             <a href={`mailto:${profile.email}`}>{profile.email}</a>
+            <p>{profile.phone}</p>
+            <p>{profile.location}</p>
             <div className="socials">
               <a href={profile.links.github} target="_blank" rel="noreferrer">
                 GitHub

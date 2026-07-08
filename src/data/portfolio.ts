@@ -9,20 +9,23 @@ export type Project = {
 
 export const profile = {
   name: "Alin Zohari",
-  role: "Geospatial Data Scientist & GIS Engineer",
+  role: "Geospatial Scientist, GIS Engineer, and Technical Educator",
   location: "London, UK",
   email: "zohari.alin@gmail.com",
-  bio: "I build geospatial products and data pipelines that turn complex spatial data into practical decisions.",
+  phone: "+44 7542 967150",
+  bio: "I design geospatial and data-driven tools that turn complex spatial information into practical decisions for planning, analysis, and delivery.",
   about:
-    "I combine GIS, machine learning, and software engineering to deliver production-ready tools, from spatial analytics to full-stack geospatial apps.",
+    "I bring experience across geospatial analysis, software delivery, and operations support. My work spans UAV photogrammetry and lidar processing, geospatial data engineering, NLP research for information extraction, and cross-functional service delivery in the UK public sector.",
   links: {
     github: "https://github.com/AlinZohari",
     linkedin: "https://www.linkedin.com/in/alinzohari/",
     cv: "/doc/AlinZohari_2Page.pdf"
   },
   experience: [
-    "GIS Analyst and Technician (2020-2022)",
-    "Administrative Assistant (2022-2023)"
+    "Business Officer, Historic England (2024-Present)",
+    "Curriculum and Club Teacher, BetaGen Academy (Part-time, 2024-Present)",
+    "GIS Analyst and Technician, Malvus Sense (2020-2022)",
+    "Administrator Assistant, HZF Resources (2022-2023)"
   ],
   education: [
     "MSc Geospatial Science and Computing - University College London",
@@ -30,13 +33,16 @@ export const profile = {
   ],
   skills: [
     "Python",
-    "JavaScript/TypeScript",
+    "R and R Markdown",
+    "JavaScript, HTML, CSS, Node.js",
     "GIS & Spatial Analysis",
     "Remote Sensing",
-    "Machine Learning",
+    "Photogrammetry (SfM) and Lidar Processing",
+    "Machine Learning and NLP",
     "PostgreSQL/PostGIS",
-    "REST APIs",
-    "Data Visualization"
+    "FME, Pix4D, QGIS, GDAL, GeoPandas",
+    "Data Visualization and Technical Documentation",
+    "Project and Grant Process Management"
   ]
 };
 
