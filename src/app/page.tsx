@@ -25,8 +25,7 @@ export default function HomePage() {
         </nav>
 
         <div className="hero-content">
-          <p className="eyebrow">{profile.role}</p>
-          <h1>Geospatial analysis and GIS project portfolio.</h1>
+          <h1>Geospatial and technology projects.</h1>
           <p>{profile.bio}</p>
           <div className="hero-actions">
             <a href="#projects" className="button primary">

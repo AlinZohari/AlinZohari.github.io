@@ -12,7 +12,7 @@ export const profile = {
   role: "Geospatial Science (GIS and Computing) Graduate",
   location: "London, UK",
   email: "zohari.alin@gmail.com",
-  bio: "I work across geospatial analysis, GIS workflows, and data-focused software projects.",
+  bio: "Focused on practical geospatial and data-driven work.",
   about:
     "My background includes roles in geospatial processing, public-sector casework support, and technical teaching. I have worked with UAV photogrammetry, lidar datasets, and GIS tools, and I completed an MSc focused on GIS and computing at UCL.",
   links: {
