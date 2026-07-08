@@ -41,7 +41,15 @@ export default function HomePage() {
       <div className="container">
         <Section id="about" title="About" subtitle={profile.location}>
           <div className="about-grid">
-            <img src="/img/pic1_colourful_medium.png" alt="Portrait of Alin Zohari" className="portrait" />
+            <img
+              src="/img/pic1_colourful_medium.png"
+              alt="Portrait of Alin Zohari"
+              className="portrait"
+              width={520}
+              height={520}
+              loading="eager"
+              decoding="async"
+            />
             <div>
               <p>{profile.about}</p>
               <h3>Experience</h3>

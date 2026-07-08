@@ -27,7 +27,15 @@ export function ProjectCard({ project }: ProjectCardProps) {
 
       <div className="project-gallery">
         {project.images.map((image) => (
-          <img key={image.src} src={image.src} alt={image.alt} loading="lazy" />
+          <img
+            key={image.src}
+            src={image.src}
+            alt={image.alt}
+            width={600}
+            height={360}
+            loading="eager"
+            decoding="async"
+          />
         ))}
       </div>
     </article>
