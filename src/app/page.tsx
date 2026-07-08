@@ -26,7 +26,7 @@ export default function HomePage() {
 
         <div className="hero-content">
           <p className="eyebrow">{profile.role}</p>
-          <h1>Building practical geospatial tools from data to delivery.</h1>
+          <h1>Geospatial analysis and GIS project portfolio.</h1>
           <p>{profile.bio}</p>
           <div className="hero-actions">
             <a href="#projects" className="button primary">
@@ -80,7 +80,6 @@ export default function HomePage() {
         <Section id="contact" title="Contact" subtitle="Open to collaborations, geospatial roles, and applied data projects.">
           <div className="contact-card">
             <a href={`mailto:${profile.email}`}>{profile.email}</a>
-            <p>{profile.phone}</p>
             <p>{profile.location}</p>
             <div className="socials">
               <a href={profile.links.github} target="_blank" rel="noreferrer">

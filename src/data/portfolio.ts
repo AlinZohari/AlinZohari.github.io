@@ -9,13 +9,12 @@ export type Project = {
 
 export const profile = {
   name: "Alin Zohari",
-  role: "Geospatial Scientist, GIS Engineer, and Technical Educator",
+  role: "Geospatial Science (GIS and Computing) Graduate",
   location: "London, UK",
   email: "zohari.alin@gmail.com",
-  phone: "+44 7542 967150",
-  bio: "I design geospatial and data-driven tools that turn complex spatial information into practical decisions for planning, analysis, and delivery.",
+  bio: "I work across geospatial analysis, GIS workflows, and data-focused software projects.",
   about:
-    "I bring experience across geospatial analysis, software delivery, and operations support. My work spans UAV photogrammetry and lidar processing, geospatial data engineering, NLP research for information extraction, and cross-functional service delivery in the UK public sector.",
+    "My background includes roles in geospatial processing, public-sector casework support, and technical teaching. I have worked with UAV photogrammetry, lidar datasets, and GIS tools, and I completed an MSc focused on GIS and computing at UCL.",
   links: {
     github: "https://github.com/AlinZohari",
     linkedin: "https://www.linkedin.com/in/alinzohari/",
