@@ -25,7 +25,7 @@ export default function HomePage() {
         </nav>
 
         <div className="hero-content">
-          <h1>Geospatial and technology projects.</h1>
+          <h1>Geospatial and Technology Projects.</h1>
           <p>{profile.bio}</p>
           <div className="hero-actions">
             <a href="#projects" className="button primary">
