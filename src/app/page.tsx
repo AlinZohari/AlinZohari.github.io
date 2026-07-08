@@ -40,35 +40,28 @@ export default function HomePage() {
 
       <div className="container">
         <Section id="about" title="About" subtitle={profile.location}>
-          <div className="about-grid">
-            <img
-              src="/img/pic1_colourful_medium.png"
-              alt="Portrait of Alin Zohari"
-              className="portrait"
-              width={520}
-              height={520}
-              loading="eager"
-              decoding="async"
-            />
-            <div>
-              <p>{profile.about}</p>
-              <h3>Experience</h3>
-              <ul>
-                {profile.experience.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-              <h3>Education</h3>
-              <ul>
-                {profile.education.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </div>
+          <div className="about-content">
+            <p>{profile.about}</p>
+            <h3>Experience</h3>
+            <ul>
+              {profile.experience.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+            <h3>Education</h3>
+            <ul>
+              {profile.education.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
           </div>
         </Section>
 
-        <Section id="projects" title="Selected Projects" subtitle="A curated set of geospatial and engineering case studies.">
+        <Section
+          id="projects"
+          title="Selected Projects"
+          subtitle="MSc projects from University College London."
+        >
           <div className="projects-grid">
             {projects.map((project) => (
               <ProjectCard key={project.title} project={project} />
