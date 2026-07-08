@@ -18,7 +18,7 @@ export const profile = {
   links: {
     github: "https://github.com/AlinZohari",
     linkedin: "https://www.linkedin.com/in/alinzohari/",
-    cv: "/doc/AlinZohari_2Page.pdf"
+    cv: "/doc/2606_Alin_Zohari.pdf"
   },
   experience: [
     "Business Officer, Historic England (2024-Present)",
